@@ -15,7 +15,7 @@ public class SampleController {
 
     @RequestMapping("/greeting")
     public ResponseEntity<String> greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new ResponseEntity<String>("Hello" + name, HttpStatus.OK);
+        return new ResponseEntity<String>("Hello " + name, HttpStatus.OK);
     }
 
     @RequestMapping("/calculation")
