@@ -3,7 +3,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.7.RELEASE")
 	}
 }
 
@@ -13,6 +13,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'war'
 
 war {
+	//Tag war file with GIT HashCode and Build Number (pulled from Jenkins environment variables)
 	baseName = 'spring-boot-template'
 	version =  "1.0.${System.env.BUILD_NUMBER ?: "0-SNAPSHOT"}"
 	manifest { attributes("Implementation-Version": System.env.GIT_COMMIT ?: "SNAPSHOT" ) }
