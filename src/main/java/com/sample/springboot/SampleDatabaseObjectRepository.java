@@ -1,4 +1,4 @@
-package com.sample.helloworld;
+package com.sample.springboot;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;

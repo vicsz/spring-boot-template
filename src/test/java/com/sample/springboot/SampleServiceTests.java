@@ -1,4 +1,6 @@
-import com.sample.helloworld.SampleService;
+package com.sample.springboot;
+
+import com.sample.springboot.SampleService;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertTrue;

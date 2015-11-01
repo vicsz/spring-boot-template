@@ -1,4 +1,6 @@
-import com.sample.helloworld.Application;
+package com.sample.springboot;
+
+import com.sample.springboot.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;

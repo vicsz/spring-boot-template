@@ -1,4 +1,4 @@
-package com.sample.helloworld;
+package com.sample.springboot;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
