@@ -20,7 +20,6 @@ public class SampleController {
 
     @RequestMapping("/calculation")
     public ResponseEntity<Integer> calculation(@RequestParam(value="firstNumber") int firstNumber, @RequestParam(value="secondNumber") int secondNumber) {
-        System.out.println("Here");
         return new ResponseEntity<Integer>(calculationService.calculateAddition(firstNumber, secondNumber), HttpStatus.OK);
     }
 }
