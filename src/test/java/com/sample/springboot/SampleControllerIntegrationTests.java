@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
 @SpringApplicationConfiguration(classes = Application.class)
 @WebIntegrationTest(randomPort = true)
 @DirtiesContext
-public class SampleControllerTests {
+public class SampleControllerIntegrationTests {
 
     @Value("${local.server.port}")
     private int port = 0;
