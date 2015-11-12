@@ -12,13 +12,6 @@ apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
 
-war {
-	//Tag war file with GIT HashCode and Build Number (pulled from Jenkins environment variables)
-	baseName = 'spring-boot-template'
-	version =  "1.0.${System.env.BUILD_NUMBER ?: "0-SNAPSHOT"}"
-	manifest { attributes("Implementation-Version": System.env.GIT_COMMIT ?: "SNAPSHOT" ) }
-}
-
 repositories {
 	mavenCentral()
 }
